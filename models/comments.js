@@ -1,8 +1,7 @@
 import mongoose, { ObjectId, Schema } from "mongoose";
 
-const commentSchema = new Schema(
+export const commentSchema = new Schema(
   {
-    _id: { type: ObjectId },
     rate: {
       type: Number,
       required: true,

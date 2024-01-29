@@ -9,8 +9,12 @@ productRouter.get("/", productController.getAllProducts);
 productRouter.get("/:id", productController.getOneProductsById);
 
 //POST: /products
+productRouter.post("/", productController.createOneProduct);
 
-// productRouter.post("/", productController.createProduct);
-//PUT: /products/:id
+// PUT: /products/:id
+productRouter.put("/:id", productController.updateOneProduct);
+
+// DELETE: /products/:id
+productRouter.delete("/:id", productController.deleteOneProduct);
 
 export default productRouter;
